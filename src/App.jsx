@@ -3,7 +3,7 @@ import './App.css'
 import './modalStyle.css'
 import useFetch from './hooks/useFetch'
 import FormUser from './components/FormUser'
-import UserCard from './components/UserCArd'
+import UserCard from './components/UserCard'
 import useModal from "./hooks/useModal"
 
 function App() {
