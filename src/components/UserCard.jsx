@@ -9,6 +9,7 @@ const UserCard = ({user, deleteUser, setInfoUpdate, openModalCreate, openModalAl
         setInfoUpdate(user)
         openModalCreate()
     }
+
   return (
     <section className="user">
         <div className="user__container">

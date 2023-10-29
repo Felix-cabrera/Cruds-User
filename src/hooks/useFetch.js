@@ -7,21 +7,20 @@ const useFetch = (baseUrl) => {
 
     //READ
     const getApi = (path) => {
-        const url = `${baseUrl}${path}/`
+        const url = `${baseUrl}${path}`
         axios.get(url)
             .then(res => setInfoApi(res.data))
             .catch(err => console.log(err))
     }
     //CREATE
     const posApi = (path, data) => {
-        const url = `${baseUrl}${path}/`
+        const url = `${baseUrl}${path}`
         axios.post(url, data)
             .then(res => {
                 console.log(res.data)
                 setInfoApi([...infoApi, res.data])
             })
             .catch(err => console.log(err))
-
     }
     //DELETE
     const deleteApi = (path, id) => {
