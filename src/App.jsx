@@ -13,7 +13,7 @@ function App() {
 
   const [infoUpdate, setInfoUpdate] = useState()
 
-  const baseUrl = 'https://user-backend-dev-hrnn.3.us-1.fl0.io'
+  const baseUrl = 'https://user-backend-dev-sfrc.1.us-1.fl0.io'
   const [users, getUsers, createUser, deleteUser, updateUser ] = useFetch(baseUrl)
 
   useEffect(() => {
